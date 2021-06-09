@@ -1,0 +1,21 @@
+<!--
+	Assignment 7: Create a button, when you click on the button some portion of the paragraph should be updated
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Updation</title>
+	</head>
+	<body>
+		<h1>MadBlock Web Dev Bootcamp</h1>
+		<p>
+			<span id="MBT">MBT Web Dev Btcmp</span>
+			is being conducted in our
+			<span id="KITS">KITS</span>
+			college
+		</p>
+		<button type="button" onclick="document.getElementById('MBT').innerHTML='MadBlocks Web Development Bootcamp'">Change Text1</button>
+		<button type="button" onclick="document.getElementById('KITS').innerHTML='KKR and KSR Institute of Technology and Sciences'">Change Text2</button>
+	</body>
+</html>
