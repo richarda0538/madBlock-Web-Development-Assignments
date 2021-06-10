@@ -1,0 +1,30 @@
+<!--
+	Assignment 8: Create an input that reads from the data list through the select tag and display the data in the paragraph tag 
+				  of HTML
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select Tag</title>
+</head>
+<body>
+	<form>
+		<label>Select your favourite cricketer</label>
+		<select id="cricketer">
+			<option> Dhoni</option>
+			<option> Sarma</option>
+			<option> Kohli</option>
+			<option> Sachin</option>
+		</select>
+	</form>
+	<button onclick="submit()">Submit</button><p id="result"></p>
+	<script>
+		function submit()
+		{
+			var c=document.getElementById('cricketer').value;
+			document.getElementById('result').innerHTML=c;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!--
+	Assignment 6: Create an input that reads the name, adhaar number, address, and displays it in the table format
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fieldset Tag Demo</title>
+		<style>
+			td {
+				color: red;
+			}
+		</style>	
+	</head>
+	<body>
+		<fieldset id="abcd">
+			<legend>Details</legend>
+			Name: <input type="text" id="uname"/> <br/> <br/>
+			Adhaar Number: <input type="number" id="adhaar"/><br/> <br/>
+			Address: <input type="text" id="address" /> <br/><br/>
+			<button onclick="readData()">Submit</button>
+		</fieldset> 
+		<script>
+			function readData() {
+				var name=document.getElementById('uname').value;
+				var adhr=document.getElementById('adhaar').value;
+				var add=document.getElementById('address').value;
+				//console.log(document.getElementById('abcd'));
+				//console.log(name);
+				document.getElementById('n').innerHTML=name;
+				document.getElementById('adh').innerHTML=adhr;
+				document.getElementById('ad').innerHTML=add;
+			}
+		</script>
+		<br/><br/>
+
+		<h1>Result Table</h1>
+		<table border='1'>
+			<tr>
+				<th>Name</th>
+				<th>Adhaar Number</th>
+				<th>Address</th>
+			</tr>
+			<tr>
+				<td id="n"></td>
+				<td id="adh"></td>
+				<td id="ad"></td>
+			</tr>
+		</table>
+	</body>
+</html>

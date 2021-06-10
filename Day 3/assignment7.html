@@ -1,0 +1,51 @@
+<!--
+	Assignment 7: Create an input that reads from radio, chechbox which displays the selected data in separate paragraphs
+-->
+
+<!DOCTYPE>
+<html>
+<head>
+	<title>Radio and Check Buttons</title>
+</head>
+<body>
+	<form>
+		<p>Select one</p>
+		<input type="radio" id="Shirt" value="Shirt" name="Dress"/>Shirt<br/>
+		<input type="radio" id="Trouser" value="Trouser" name="Dress"/>Trouser<br/>
+		<label>Select colors</label><br/>
+		<input type="checkbox" name="black" id="black"/>Black<br/>
+		<input type="checkbox" name="white" id="white"/>White<br/>	
+	</form>
+	<button onclick="submit()">Submit</button>
+	<p id="Dress"></p>
+	<p id="result"></p>
+	<script>
+		function submit()
+		{
+			if(document.getElementById('Shirt').checked==true) {
+				document.getElementById('Dress').innerHTML='Shirt';
+			}
+			else if(document.getElementById('Trouser').checked==true) {
+				document.getElementById('Dress').innerHTML='Trouser';
+			}
+			
+			if(black.checked==true&&white.checked==true)
+			{
+				res='black,white';
+			}
+			else if(black.checked==true&&white.checked==false)
+			{
+				res='black';
+			}
+			else if(black.checked==false &&white.checked==true){
+				res='white';
+			}
+			else 
+			{
+				res='none';
+			}
+			document.getElementById('result').innerHTML=res;
+		}
+	</script>
+</body>
+</html>
