@@ -1,0 +1,29 @@
+<!--
+	Assignment 4: Create paragraphs in the div tag and demonstrate general sibling CSS selector, highlight the paragraphs 
+				  respectively
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>General Sibling Selector Demo</title>
+		<style>
+			div ~ P {
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>General Sibling Demo</h1>
+		<p>This is first line</p>
+		<div>
+			<p>This is Paragraph1</p>
+			<p>This is Paragraph2</p>
+		</div>
+		<p>This is Paragraph3</p>
+		<code>
+			<h3>madBlocks Web Dev Bootcamp</h3>
+		</code>
+		<p>This is Paragraph4</p>
+	</body>
+</html>

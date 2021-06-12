@@ -1,0 +1,32 @@
+<!--
+	Assignment 2: Create paragraphs in the div tag abd demonstrate adjacent sibling CSS selector, highlight the paragraphs 
+				  respectively
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adjacent Sibling Selector</title>
+		<style>
+			div + p {
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Adjacent Sibling Selector Demo</h1>
+		<p>This is first line</p>
+		<div>
+			<p>This is Paragraph 1 in div 1</p>
+			<p>This is Paragraph 2 in div 1</p>
+		</div>
+		<p>This is Paragraph 3 after div 1</p>
+		<p>This is Paragraph 4 after div 1</p>
+		<div>
+			<p>This is Paragraph 5 in div 2</p>
+			<p>This is Paragraph 6 in div 2</p>
+		</div>
+		<p>This is Paragraph 7 after div 2</p>
+		<p>This is Paragraph 8 after div 2</p>
+	</body>
+</html>

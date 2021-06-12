@@ -1,0 +1,29 @@
+<!--
+	Assignment 3: Create paragraphs in the div tag and demonstrate child CSS selector, highlight the paragraphs respectively
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Child Selector Demo</title>
+		<style>
+			div > p {
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Child Selector Demo</h1>
+		<p>This is first line</p>
+		<div>
+			<p>This is Paragraph 1</p>
+			<p>This is Paragraph 2</p>
+			<section>
+				<p>This is Paragraph 3</p>
+			</section>
+			<p>This is Paragraph 4</p>
+		</div>
+		<p>This is Paragraph 5</p>
+		<p>This is Paragraph 6</p>
+	</body>
+</html>
