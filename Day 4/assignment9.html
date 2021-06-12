@@ -1,0 +1,19 @@
+<!--
+	Assignment 9: Write your name on Canvas using HTML and JavaScript
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Name on Canvas</title>
+	</head>
+	<body>
+		<canvas id="r" width="300" height="100" style="border: 1px solid lightgrey;"></canvas>
+		<script>
+			var a = document.getElementById('r');
+			cursor = a.getContext('2d');
+			cursor.font="30px Arial";
+			cursor.strokeText("A.Richard Son", 45, 55);
+		</script>
+	</body>
+</html>

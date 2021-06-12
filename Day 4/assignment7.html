@@ -1,0 +1,25 @@
+<!--
+	Assignment 7: Create a simple subscription form which collects email id and store it in a database using HTML and PHP
+-->
+
+<!DOCTYPE>
+<html>
+	<head>
+		<h1>Linking php and html</h1>
+	</head>
+	<body>
+		<form action="/reg/data.php" method="post" target="_blank">
+			<label for="email">Email</label>
+			<input type="text" id="emailid" name="emailid" placeholder ="abc@gmail.com">
+		</form>
+		<button  onclick="submit()">Click to submit</button>
+		<p id="res"></p>
+		<script>
+			function submit()
+			{
+				var email=document.getElementById('emailid').value;
+				document.getElementById('res').innerHTML=email;
+			}
+		</script>
+	</body>
+</html>
