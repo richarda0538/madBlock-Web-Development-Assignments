@@ -19,8 +19,8 @@
 	echo '<br/>';
 	if($sFlag==1)
 	{
-		$sql="INSERT INTO subscription_form(email_id) values(".$emailid");";
-		$a=mysqliquery($conn,$sql);
+		$sql="INSERT INTO subscription_form (email_id) VALUES ('".$emailid."')";
+		$a=mysqli_query($conn,$sql);
 		if($a)
 		{
 			echo "Data inserted successfully";
