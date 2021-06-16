@@ -27,7 +27,7 @@
 		}
 		else
 		{
-			echo $conn->error;
+			echo "Data Not Inserted";
 		}
 	}
 ?
