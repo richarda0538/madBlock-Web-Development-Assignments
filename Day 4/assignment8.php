@@ -35,7 +35,7 @@
 		?>
 					<tr>
 						
-						<td><?php echo $row['email_id'];?></td>
+						<td><?php echo $row['emailid'];?></td>
 						
 					</tr>
 		<?php			
